@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  background-color: lightgrey;
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.navlink-container {
+  flex: 1;
+  justify-items: end;
+}

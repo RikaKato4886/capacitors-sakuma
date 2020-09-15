@@ -1,0 +1,27 @@
+@media screen and (max-width: 1024px) {//デスクトップ
+
+}
+
+@media screen and (max-width: 769px) { //タブレット
+
+
+}
+@media screen and (max-width: 481px) { //スマホ
+
+  .logo-container img{
+    width:6rem;
+    margin-top: 3px;
+    margin-right: 15rem;
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 85vh;
+    top: 15vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+  }
+
+}

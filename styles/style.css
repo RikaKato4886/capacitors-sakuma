@@ -1,45 +1,129 @@
 @charset "UTF-8";
-@media screen and (max-width: 481px) {
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box; }
+
+section {
+  padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: #12172b;
+  text-align: center;
+  height: 100vh;
+  overflow: scroll; }
+
+.about-title {
+  text-align: center;
+  background: #12172b;
+  padding: 30px; }
+
+.about-title h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px; }
+
+.line {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 3px;
+  background: #3498db; }
+
+.photo-container img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100px;
+  background-color: black;
+  margin-bottom: 2rem; }
+
+.career-container {
+  text-align: center;
+  justify-content: center; }
+  .career-container h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px; }
+  .career-container p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 2rem;
+    color: white; }
+
+.carousel {
+  padding-top: 10rem;
+  overflow: scroll; }
+
+.carousel-contaner {
+  overflow: scroll; }
+  .carousel-contaner h1 {
+    color: white; }
+
+.card {
+  margin-bottom: 10rem; }
+
+@media screen and (max-width: 769px) {
+  body {
+    overflow: hidden;
+    width: 100%; }
+
   .logo-container img {
     width: 6rem;
     margin-top: 3px;
-    margin-right: 15rem; }
+    margin-right: 30rem; }
 
   .nav-links {
     position: absolute;
-    right: 0px;
-    height: 85vh;
-    top: 15vh;
+    left: 0px;
+    height: 100vh;
+    top: 8vh;
     background-color: black;
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    transform: translateX(100%); }
+
+  .burger {
+    display: block; }
+    .burger div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px; } }
 /******************  TOP PAGE **********************/
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box; }
 
+html {
+  overflow: hidden; }
+
 body {
   font-family: 'Poppins', sans-serif; }
 
-header {
-  background-color: black;
+.logo-container img {
+  width: 10rem; }
+
+nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  min-height: 10px;
-  position: relative; }
-
-.logo-container img {
-  width: 10rem;
-  margin-top: 3px; }
-
-.navlink-container {
-  margin-left: 30px; }
+  background: black;
+  height: 13vh;
+  align-items: center; }
 
 .nav-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr; }
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+  margin-left: auto; }
 
 .nav-link {
   color: white; }
@@ -65,7 +149,7 @@ header {
   width: 100%;
   background-size: cover;
   height: 100vh;
-  z-index: 0;
+  z-index: -100;
   overflow: hidden;
   /*ブラー効果でボヤけた部分を非表示*/ }
 

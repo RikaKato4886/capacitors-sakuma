@@ -1,0 +1,70 @@
+$blue-color: #4D76A4;
+$darkblue: #12172b;
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+section {
+  padding-top: 2rem;
+  font-family: 'Poppins', sans-serif;
+  background-color: $darkblue;
+  text-align: center;
+  height: 100vh;
+  overflow: scroll;
+
+}
+
+.about-title {
+  text-align: center;
+  background: $darkblue;
+  padding: 30px;
+}
+
+.about-title h1 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: white;
+  font-size: 40px;
+}
+
+.line {
+  display: block;
+  margin: auto;
+  width: 10rem;
+  height: 3px;
+  background: #3498db;
+}
+
+.photo-container {
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100px;
+    background-color: black;
+    margin-bottom: 2rem;
+  }
+}
+
+.career-container {
+  text-align: center;
+  justify-content: center;
+  h2 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+  }
+  p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: 2rem;
+    color: white;
+  }
+}
+

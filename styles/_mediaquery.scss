@@ -2,26 +2,40 @@
 
 }
 
-@media screen and (max-width: 769px) { //タブレット
+@media screen and (max-width: 769px) { //スマホ
 
-
-}
-@media screen and (max-width: 481px) { //スマホ
+  body {
+    overflow: hidden;
+    width: 100%;
+  }
 
   .logo-container img{
     width:6rem;
     margin-top: 3px;
-    margin-right: 15rem;
+    margin-right: 30rem;
   }
 
   .nav-links{
     position: absolute;
-    right: 0px;
-    height: 85vh;
-    top: 15vh;
+    left: 0px;
+    height: 100vh;
+    top: 8vh;
     background-color: black;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    z-index: 100;
+    align-items: center;
+    transform: translateX(100%);
   }
 
+  .burger {
+    display: block;
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: white;
+      margin: 5px;
+    }
+  }
 }

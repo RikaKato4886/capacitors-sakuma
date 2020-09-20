@@ -10,32 +10,33 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  overflow: hidden;
+}
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
-header {
-  background-color: black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 10px;
-  position: relative;
-}
-
 .logo-container img{
   width:10rem;
-  margin-top: 3px;
+
 }
 
-.navlink-container {
-  margin-left: 30px;
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: black;
+  height: 13vh;
+  align-items: center;
 }
 
 .nav-links{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+  margin-left: auto;
 }
 
 .nav-link{
@@ -47,7 +48,6 @@ header {
     font-size: 14px;
   }
 }
-
 
 .burger {
   display: none;
@@ -67,7 +67,7 @@ header {
   width: 100%;
   background-size: cover;
   height: 100vh;
-  z-index: 0;
+  z-index: -100;
   overflow: hidden;/*ブラー効果でボヤけた部分を非表示*/
 }
 

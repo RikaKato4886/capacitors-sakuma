@@ -5,7 +5,7 @@
 @media screen and (max-width: 769px) { //スマホ
 
   body {
-    overflow: hidden;
+    overflow: scroll;
     width: 100%;
   }
 
@@ -38,4 +38,23 @@
       margin: 5px;
     }
   }
+
+  //-------CONTACT FORM--------//
+
+  .contact {
+    overflow: hidden;
+  }
+
+  .info-container {
+    flex-direction: column;
+    .info-box{
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        text-align: center;
+      }
+    }
+  }
 }
+

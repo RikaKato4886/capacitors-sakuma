@@ -1,7 +1,11 @@
 @import 'about';
 @import 'main';
 @import 'mediaquery';
+@import 'contact';
 
+// @import "./fontawesome/fontawesome.scss";
+// @import "./fontawesome/solid.scss";
+// @import "./fontawesome/brands.scss";
 
 /******************  TOP PAGE **********************/
 
@@ -10,9 +14,9 @@
   padding: 0px;
   box-sizing: border-box;
 }
-html {
-  overflow: hidden;
-}
+// html {
+//   // overflow: hidden;
+// }
 
 body {
   font-family: 'Poppins', sans-serif;

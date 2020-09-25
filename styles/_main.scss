@@ -1,13 +1,26 @@
 .carousel {
-  padding-top: 10rem;
+  padding-top: 2.5rem;
   overflow: scroll;
 }
 
 .carousel-contaner{
   overflow: scroll;
-  h1{
+}
+
+.top-title{
+  background-color: black;
+  height: 20vh;
+  text-align: center;
+  justify-items: center;
+  padding-top: 10px;
+  h1 {
     color: white;
   }
+}
+
+.sub-title{
+  text-align: center;
+  padding: 2rem 3rem;
 }
 
 .card{

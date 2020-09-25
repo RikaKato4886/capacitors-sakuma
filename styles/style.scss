@@ -31,16 +31,18 @@ nav {
   display: flex;
   justify-content: space-around;
   background: black;
-  height: 13vh;
+  height: 15vh;
   align-items: center;
 }
 
 .nav-links{
-  display: flex;
-  list-style: none;
-  width: 50%;
-  justify-content: space-around;
-  margin-left: auto;
+  ul{
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto;
+  }
 }
 
 .nav-link{
@@ -53,15 +55,13 @@ nav {
   }
 }
 
-.burger {
-  display: none;
-  div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
+.nav-link:hover{
+  background-color: #555;
 }
+
+
+
+
 
 .top-image{
   background: url(../src/back-image4.jpg);

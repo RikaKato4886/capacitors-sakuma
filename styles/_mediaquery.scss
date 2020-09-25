@@ -1,12 +1,28 @@
 @media screen and (max-width: 1024px) {//デスクトップ
 
+  .burger {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    .line {
+      height: 3px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+
 }
 
 @media screen and (max-width: 769px) { //スマホ
 
   body {
-    overflow: scroll;
-    width: 100%;
+    overflow-x: hidden;
   }
 
   .logo-container img{
@@ -16,27 +32,31 @@
   }
 
   .nav-links{
+    ul{
     position: absolute;
-    left: 0px;
+    right: 0px;
     height: 100vh;
-    top: 8vh;
+    top: 15vh;
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 50%;
     z-index: 100;
     align-items: center;
     transform: translateX(100%);
+    }
   }
 
   .burger {
     display: block;
-    div {
-      width: 25px;
-      height: 3px;
-      background-color: white;
-      margin: 5px;
-    }
+    z-index: 10000;
+  }
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: pink;
+    margin: 5px;
   }
 
   //-------CONTACT FORM--------//

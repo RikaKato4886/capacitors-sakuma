@@ -32,10 +32,12 @@ nav {
   justify-content: space-around;
   background: black;
   height: 15vh;
+  padding-right: 12px;
   align-items: center;
 }
 
 .nav-links{
+  justify-content: center;
   ul{
     display: flex;
     list-style: none;
@@ -52,6 +54,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 14px;
+    // text-align: end;
   }
 }
 
@@ -59,7 +62,21 @@ nav {
   background-color: #555;
 }
 
-
+.burger {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  .line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+}
 
 
 
@@ -102,5 +119,21 @@ nav {
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   text-align: center;
+}
+
+.link-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: #125FDF;
+  color: white;
+  // text-decoration: none;
+  border-radius: 10px;
+  padding: .5rem .5rem;
+}
+
+.link-box:hover{
+  color: white;
+  text-decoration: none;
+  background-color: #7394ca;
 }
 

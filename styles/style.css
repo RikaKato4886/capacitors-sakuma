@@ -4,22 +4,20 @@
 .about-container {
   padding-top: 2rem;
   font-family: 'Poppins', sans-serif;
-  background-color: #12172b;
   text-align: center;
   height: 100vh; }
 
 .about-title {
   text-align: center;
-  background: #12172b;
   padding: 30px; }
 
 .about-title h1 {
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: white;
+  color: black;
   font-size: 40px; }
 
-.line {
+.about-line {
   display: block;
   margin: auto;
   width: 10rem;
@@ -30,8 +28,7 @@
   width: 10rem;
   height: 10rem;
   border-radius: 100px;
-  background-color: black;
-  margin-bottom: 2rem; }
+  background-color: black; }
 
 .career-container {
   text-align: center;
@@ -39,15 +36,15 @@
   .career-container h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: white;
+    color: black;
     font-size: 40px; }
   .career-container p {
-    display: block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     margin-top: 2rem;
-    color: white; }
+    color: black; }
 
 .carousel {
   padding-top: 2.5rem;
@@ -74,19 +71,7 @@
 
 @media screen and (max-width: 1024px) {
   .burger {
-    position: absolute;
-    top: .75rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px; }
-    .burger .line {
-      height: 3px;
-      width: 100%;
-      background-color: black;
-      border-radius: 10px; } }
+    display: none; } }
 @media screen and (max-width: 769px) {
   body {
     overflow-x: hidden; }
@@ -110,8 +95,7 @@
     transform: translateX(100%); }
 
   .burger {
-    display: block;
-    z-index: 10000; }
+    display: block; }
 
   .line {
     width: 25px;
@@ -207,15 +191,19 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
+  background: black;
   height: 15vh;
+  padding-right: 12px;
   align-items: center; }
 
-.nav-links ul {
-  display: flex;
-  list-style: none;
-  width: 50%;
-  justify-content: space-around;
-  margin-left: auto; }
+.nav-links {
+  justify-content: center; }
+  .nav-links ul {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto; }
 
 .nav-link {
   color: white; }
@@ -227,6 +215,20 @@ nav {
 
 .nav-link:hover {
   background-color: #555; }
+
+.burger {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px; }
+  .burger .line {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px; }
 
 .top-image {
   background: url(../src/back-image4.jpg);
@@ -268,5 +270,18 @@ nav {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
+
+.link-box {
+  width: 4rem;
+  height: 4rem;
+  background-color: #125FDF;
+  color: white;
+  border-radius: 10px;
+  padding: .5rem .5rem; }
+
+.link-box:hover {
+  color: white;
+  text-decoration: none;
+  background-color: #7394ca; }
 
 /*# sourceMappingURL=style.css.map */

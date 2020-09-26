@@ -2,28 +2,29 @@ $blue-color: #4D76A4;
 $darkblue: #12172b;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
 .about-container {
   padding-top: 2rem;
   font-family: 'Poppins', sans-serif;
-  background-color: $darkblue;
+  // background: $darkblue;
   text-align: center;
   height: 100vh;
 }
 
+
 .about-title {
   text-align: center;
-  background: $darkblue;
   padding: 30px;
 }
 
 .about-title h1 {
   text-transform: uppercase;
   margin-bottom: 30px;
-  color: white;
+  color: black;
   font-size: 40px;
 }
 
-.line {
+.about-line {
   display: block;
   margin: auto;
   width: 10rem;
@@ -37,26 +38,31 @@ $darkblue: #12172b;
     height: 10rem;
     border-radius: 100px;
     background-color: black;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 }
+
+//-----------------------------//
+
 
 .career-container {
   text-align: center;
   justify-content: center;
+  // background: $darkblue;
   h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: white;
+    color: black;
     font-size: 40px;
   }
   p {
-    display: block;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
     margin-top: 2rem;
-    color: white;
+    color: black;
+    
   }
 }
 

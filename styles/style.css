@@ -30,6 +30,26 @@
   border-radius: 100px;
   background-color: black; }
 
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  width: margin auto;
+  height: 25rem;
+  margin: .5rem 3rem;
+  padding: 3rem 3rem; }
+  .services-container .service {
+    border: solid 1px lightgray;
+    border-radius: 10px; }
+  .services-container .fas {
+    font-size: 4rem;
+    color: #CF382A;
+    padding: 2rem 1rem; }
+  .services-container .service-detail {
+    padding: 1rem 2rem; }
+  .services-container h3, .services-container p {
+    color: grey; }
+
 .career-container {
   text-align: center;
   justify-content: center; }
@@ -102,6 +122,10 @@
     height: 3px;
     background-color: pink;
     margin: 5px; }
+
+  .services-container {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem; }
 
   .contact {
     overflow: hidden; }

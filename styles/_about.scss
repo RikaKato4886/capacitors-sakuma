@@ -42,9 +42,36 @@ $darkblue: #12172b;
   }
 }
 
-//-----------------------------//
+//------------- SERVICE DETAILS ----------------//
+
+.services-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2rem;
+  // background: lightblue;
+  width: margin auto;
+  height: 25rem;
+  margin: .5rem 3rem;
+  padding: 3rem 3rem;
+  .service{
+    border: solid 1px lightgray;
+    border-radius: 10px;
+  }
+  .fas {
+    font-size: 4rem;
+    color: #CF382A;
+    padding: 2rem 1rem;
+  }
+  .service-detail{
+    padding: 1rem 2rem;
+  }
+  h3, p{
+    color: grey
+  }
+}
 
 
+//------------- CAREER DETAILS ----------------//
 .career-container {
   text-align: center;
   justify-content: center;

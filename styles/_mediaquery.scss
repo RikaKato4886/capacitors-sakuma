@@ -45,6 +45,12 @@
     margin: 5px;
   }
 
+  //---------ABOUT PAGE-----------//
+  .services-container{
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
+  }
+
   //-------CONTACT FORM--------//
 
   .contact {

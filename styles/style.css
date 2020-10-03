@@ -225,19 +225,8 @@ body {
   .logo-container img {
     width: 100%; }
 
-.burger {
-  position: absolute;
-  top: .75rem;
-  right: 1rem;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 21px; }
-  .burger .line {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px; }
+.navbar-toggler {
+  cursor: pointer; }
 
 .top-image {
   background: url(../src/back-image4.jpg);
@@ -293,44 +282,12 @@ body {
   text-decoration: none;
   background-color: #7394ca; }
 
-@media screen and (min-width: 320px) {
-  .nav-links ul {
-    position: absolute;
-    right: 0px;
-    height: 100vh;
-    top: 15vh;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    z-index: 100;
-    align-items: center;
-    transform: translateX(100%); } }
 @media screen and (min-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    height: 15vh;
-    padding-right: 12px;
-    align-items: center; }
+  .navbar-nav {
+    margin: 0 0 0 auto; }
 
-  .nav-links ul {
-    display: none; }
-
-  .nav-link {
-    display: flex; }
-
-  .nav-link {
-    color: #18181a; }
-    .nav-link a {
-      color: #18181a;
-      text-decoration: none;
-      letter-spacing: 3px;
-      font-size: 14px; }
-
-  .nav-link:hover {
-    background-color: #555; } }
+  .nav-item {
+    margin-left: 2rem; } }
 footer {
   width: 100vw;
   display: block;

@@ -1,28 +1,9 @@
 $blue-color: #4D76A4;
 $darkblue: #12172b;
+$lightGrey: rgb(134,134,134);
+$lightpink:#F5D9DB;
+$yellow: #DEB038;
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
-.about-container {
-  padding-top: 2rem;
-  font-family: 'Poppins', sans-serif;
-  // background: $darkblue;
-  text-align: center;
-  height: 100vh;
-}
-
-
-.about-title {
-  text-align: center;
-  padding: 30px;
-}
-
-.about-title h1 {
-  text-transform: uppercase;
-  margin-bottom: 30px;
-  color: black;
-  font-size: 40px;
-}
 
 .about-line {
   display: block;
@@ -32,15 +13,67 @@ $darkblue: #12172b;
   background: #3498db;
 }
 
-.photo-container {
-  img {
-    width: 10rem;
-    height: 10rem;
-    border-radius: 100px;
+//------------- TITLE DETAILS ----------------//
+
+.about-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  .about-title {
+    text-align: center;
+    padding: 30px;
     background-color: black;
-    // margin-bottom: 2rem;
+    // position: fixed;
+  }
+  .about-title h1 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 40px;
+  }
+
+}
+
+//------------- CAREER DETAILS ----------------//
+
+.profile-container {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  padding: 2rem 1rem;
+  width: 90%;
+  margin: 3rem auto;
+  .photo-container {
+    img {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 100px;
+      background-color: black;
+    }
+  }
+  .profile-detail{
+    align-items: center;
+    justify-content: center;
+    p{
+      background-color: #F5F5F5;
+      color: $lightGrey;
+      width: 70%;
+      margin: 0 auto;
+    }
+  }
+
+}
+
+.image-relation {
+  display: grid;
+  grid-template-columns: 1fr;
+  // background-image: url(/src/image-relation.png);
+  img{
+    margin: 0 auto;
+    padding-left: 4rem;
+
   }
 }
+
 
 //------------- SERVICE DETAILS ----------------//
 
@@ -49,10 +82,7 @@ $darkblue: #12172b;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 2rem;
   // background: lightblue;
-  width: margin auto;
-  height: 25rem;
-  margin: .5rem 3rem;
-  padding: 3rem 3rem;
+  margin: 2rem 1rem;
   .service{
     border: solid 1px lightgray;
     border-radius: 10px;
@@ -70,17 +100,22 @@ $darkblue: #12172b;
   }
 }
 
-
 //------------- CAREER DETAILS ----------------//
 .career-container {
+  padding-top: 2rem;
   text-align: center;
   justify-content: center;
-  // background: $darkblue;
+  color: $lightGrey;
   h2 {
     text-transform: uppercase;
     margin-bottom: 30px;
     color: black;
     font-size: 40px;
+  }
+  h3{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: black;
   }
   p {
     text-align: left;
@@ -88,8 +123,6 @@ $darkblue: #12172b;
     margin-right: auto;
     width: 60%;
     margin-top: 2rem;
-    color: black;
-    
   }
 }
 

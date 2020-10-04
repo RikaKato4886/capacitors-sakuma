@@ -16,32 +16,29 @@
   <body>
     <!---------------------LOGO & NAVBAR --------------------->
     <header>
-        <nav class="navlink-container">
-          <div class="logo-container">
-            <img src="src/logo-SC-black.png" alt="logo">
-            <h4 class="logo"></h4>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="#">
+          <img src="src/logo-SC-black.png" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Pricing</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
           </div>
-          <div class="nav-links">
-            <ul>
-              <li class="nav-link"><a href="#">HOME</a></li>
-              <li class="nav-link"><a href="#">ABOUT</a></li>
-              <li class="nav-link"><a href="#">WORKS</a></li>
-              <li class="nav-link"><a href="#">CONTACT</a></li>
-            </ul>
-          </div>
-          <a href="#" class="burger">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </a>
-        </nav>
+        </div>
+      </nav>
     </header>
 
     <div class="top-image"></div>
     <div class="landing-wrapper">
       <div class="message-box">
-        <h1>メインメッセージ</h1>
-        <p>サブメッセージ</p>
+        <h1>Neque porro quisquam est qui dolorem</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
         <a href="#" class="link-box">
           <span>LINK to Main Page</span>
         </a>
@@ -49,17 +46,31 @@
     </div>
     <footer>
       <div class="inner_footer">
-        <div class="logo_container">
+        <div class="footer-inside logo_container">
           <img src="src/logo-SC-white.png">
-          <p><i class="fas fa-map-marker"> 〒115-
+          <p><i class="fas fa-map-marker-alt"> 〒115-
             0056 東京都北区西が丘1-37-8-601</i></p>
-          <p><i class="fas fa-envelope"></i> sakufamily-energy54@ab.auone-net.jp</p>
-          <p><i class="fas fa-mobile-alt"></i> 0904941087</p>
+          <p><i class="fas fa-envelope"></i>  sakufamily-energy54@ab.auone-net.jp</p>
+          <p><i class="fas fa-mobile-alt"></i>  0904941087</p>
         </div>
+        <div class="footer-inside footer-contents">
+          <h3>Contents</h3>
+          <ul>
+            <li>Top</li>
+            <li>About Us</li>
+            <li>Main</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2020 sakuma,Inc All rights reserved.</p>
       </div>
     </footer>
 
-
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>

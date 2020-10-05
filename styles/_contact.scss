@@ -79,3 +79,23 @@
     }
   }
 }
+
+@media screen and (min-width: 320px) {
+  //-------CONTACT FORM--------//
+
+  .contact {
+    overflow: hidden;
+  }
+
+  .info-container {
+    flex-direction: column;
+    .info-box{
+      // display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}

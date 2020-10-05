@@ -1,11 +1,3 @@
-$blue-color: #4D76A4;
-$lightblue: #3498db;
-$darkblue: #12172b;
-$lightGrey: rgb(134,134,134);
-$lightpink:#F5D9DB;
-$yellow: #DEB038;
-$grey:#EEF2F4;
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 .about-line {
@@ -101,7 +93,8 @@ $grey:#EEF2F4;
 //------------- SERVICE DETAILS ----------------//
 
 .service-title {
-  color: #333;
+  color: white;
+  background-color: #333;
 }
 
 .services-container{

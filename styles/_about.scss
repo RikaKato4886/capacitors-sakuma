@@ -60,24 +60,23 @@
       background-color: black;
     }
   }
-  .profile-detail{
-    align-items: center;
-    justify-content: center;
-    p{
-      background-color: #F5F5F5;
-      color: $lightGrey;
-      width: 80%;
-      margin: 0 auto;
-    }
-    .career-link{
-      background-color: $lightblue;
-      margin-top: 1rem;
-      height: 1.5rem;
-      color: white;
+}
 
-    }
+.profile-detail{
+  align-items: center;
+  justify-content: center;
+  p{
+    background-color: #F5F5F5;
+    color: $lightGrey;
+    width: 80%;
+    margin: 0 auto;
   }
-
+  .career-link{/*階層が深すぎるので、浅くしました*/
+    background-color: $lightblue;
+    margin-top: 1rem;
+    height: 1.5rem;
+    color: $link-color;/* BootstrapのSassが呼ばれていたので、同じ変数名を利用し、文字色スタイルの上書きをしています */
+  }
 }
 
 .image-relation {

@@ -8,31 +8,35 @@ footer{
   padding-top: 30px;
   background-color: #18181a;
   margin: 0 auto;
+  -webkit-box-shadow: 4px -5px 27px -10px rgba(0,0,0,0.75);
+  -moz-box-shadow: 4px -5px 27px -10px rgba(0,0,0,0.75);
+  box-shadow: 4px -5px 27px -10px rgba(0,0,0,0.75);
   .inner_footer{
+    font-family: serif;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     height: 100%;
     color: lightgray;
     padding: 0 2rem;
-    .logo-container{
-      width: 35%;
-      height: 100%;
-      img{
-        width: 60px;
-        height: auto;
+    .footer-inside{
+      p{
+        font-family: serif;
       }
     }
     .footer-contents{
       color: lightgray;
       h3{
         font-size: 1.8rem;
+        font-family: serif;
       }
       ul {
         display: inline-flex;
         list-style: none;
         li{
           margin-left: 2rem;
+          font-family: serif;
+          color: white;
         }
       }
     }
@@ -43,6 +47,7 @@ footer{
     text-align: center;
     p{
       margin: 0;
+      font-family:serif;
     }
   }
 }

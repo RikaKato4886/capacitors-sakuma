@@ -1,178 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <!-- FontAwesome css -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- FontAwesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 
-  <!-- このファイルページのcss file -->
-  <link rel="stylesheet" href="styles/style.css" />
-  <title>Document</title>
-</head>
+    <!-- このファイルページのcss file -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+  </head>
 
-<section class="carousel-contaner">
-
-  <div class="top-title">
-    <h1>Works</h1>
-  </div>
-  <div class="sub-title">
-    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
-  </div>
-
-      <!--Carousel Wrapper-->
-  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="carousel-item active">
-
-        <div class="col-md-3" style="float:left">
-         <div class="card mb-2">
-            <img class="card-img-top"
-              src="src/vehicle.jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">燃料電池セミナー資料</h4>
-              <p class="card-text">2019年6月23日に北京交通大学で講演した「日本の燃料電池戦略」の資料です</p>
-              <a class="btn btn-primary">詳細</a>
-            </div>
+  <body>
+    <!-- bodyタグでコンテンツ全体を囲む必要があります -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/logo-SC-black.png" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home</a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="main.html">Works</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
           </div>
         </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="src/coming soon.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">準備中</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">詳細</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="src/coming soon.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">準備中</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">詳細</a>
-            </div>
-          </div>
-        </div>
-        
-         <div class="col-md-3" style="float:left">
-         <div class="card mb-2">
-            <img class="card-img-top"
-              src="src/coming soon.png" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">準備中</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">詳細
-              </a>
-            </div>
-          </div>
-        </div>
-  
+      </nav>
+    </header>
+
+    <section class="carousel-contaner">
+      <!-- <div class="top-title">
+        <h1>Works</h1>
+      </div> -->
+      <div class="sub-title">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
       </div>
-      <!--/.First slide-->
-  
-      <!--Second slide-->
-      <div class="carousel-item">
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.Second slide-->
-  
-     
-  
-    </div>
-    <!--/.Slides-->
-  
-  </div>
-  <!--/.Carousel Wrapper-->
-  <footer>
-    <div class="inner_footer">
-      <div class="footer-inside logo_container">
-        <img src="src/logo-SC-white.png">
-        <p><i class="fas fa-map-marker-alt"> 〒115-
-          0056 東京都北区西が丘1-37-8-601</i></p>
-        <p><i class="fas fa-envelope"></i>  sakufamily-energy54@ab.auone-net.jp</p>
-        <p><i class="fas fa-mobile-alt"></i>  0904941087</p>
-      </div>
-      <div class="footer-inside footer-contents">
-        <h3>Contents</h3>
-        <ul>
-          <li>Top</li>
-          <li>About Us</li>
-          <li>Main</li>
-          <li>Contact</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2020 sakuma,Inc All rights reserved.</p>
-    </div>
-  </footer>
 
-</section>
+          <!--Carousel Wrapper-->
+      <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+        <!--Slides-->
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <div class="col-md-3" style="float:left">
+            <div class="card mb-2">
+                <img class="card-img-top"
+                  src="src/vehicle.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">燃料電池セミナー資料</h4>
+                  <p class="card-text">2019年6月23日に北京交通大学で講演した「日本の燃料電池戦略」の資料です</p>
+                  <a class="btn btn-primary">詳細</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="src/coming soon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">準備中</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary">詳細</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="src/coming soon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">準備中</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary">詳細</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3" style="float:left">
+              <div class="card mb-2">
+                <img class="card-img-top"
+                  src="src/coming soon.png" alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">準備中</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary">詳細
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!--/.First slide-->
+        </div>
+        <!--/.Slides-->
+      </div>
+      <!--/.Carousel Wrapper-->
+      <footer>
+        <div class="inner_footer">
+          <div class="footer-inside logo_container">
+            <img src="src/logo-SC-white.png">
+            <p><i class="fas fa-map-marker-alt"> 〒115-
+              0056 東京都北区西が丘1-37-8-601</i></p>
+            <p><i class="fas fa-envelope"></i>  sakufamily-energy54@ab.auone-net.jp</p>
+            <p><i class="fas fa-mobile-alt"></i>  0904941087</p>
+          </div>
+          <div class="footer-inside footer-contents">
+            <h3>Contents</h3>
+            <ul>
+              <a href="index.html"><li>Top</li></a>
+              <a href="about.html"><li>About</li></a>
+              <a href="main.html"><li>Main</li></a>
+              <a href="contact.html"><li>Contact</li></a>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2020 sakuma,Inc All rights reserved.</p>
+        </div>
+      </footer>
+
+    </section>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+<!-- /body 閉じはここにきます -->
 </html>

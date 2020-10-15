@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- Bootstrap css-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 
@@ -14,29 +14,41 @@
 </head>
 
   <body>
-    <section class="about-container">
-      <div class="about-title">
-        <h1>ABOUT US</h1>
-        <div class="about-line"></div>
-      </div>
-
-      <div class="profile-container">
-        <div class="photo-container">
-          <img src="src/rikaphoto.jpg" class="photo" alt="photo">
-        </div>
-        <div class="profile-detail">
-          <h2>Kazuhiro Sakuma</h2>
-          <p>1986年 日本ケミコン入社。Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
-          <div class="career-link">
-            <a href="#">Career History</a>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <a class="navbar-brand" href="index.html">
+          <img src="src/logo-SC-black.png" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="about.html">About</a>
+            <a class="nav-item nav-link" href="main.html">Works</a>
+            <a class="nav-item nav-link" href="contact.html">Contact</a>
           </div>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="service-title">
-        <h1>SERVICES</h1>
-        <div class="about-line"></div>
+    <div class="profile-background"></div>
+    <div class="profile-container" style="background-image: url('src/moyou1.jpg'); background-repeat: no-repeat">
+      <div class="profile-inside-box">
+        <div class="photo-container">
+          <img src="src/coming soon.png" class="photo" alt="photo">
+        </div>
+        <div class="profile-detail">
+          <h2>佐久間 一浩<br>Kazuhiro Sakuma</h2>
+          <p>1986年 日本ケミコン入社。Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer</p>
+          <a href="#" class="career-link">経歴詳細</a>
+        </div>
       </div>
+    </div>
+
+    <section class="service-container-outer">
+      <h2 class="service-title">SERVICES</h2>
       <div class="services-container">
         <div class="service">
           <div class="icon"><i class="fas fa-people-arrows"></i></div>
@@ -64,75 +76,89 @@
           </div>
         </div>
       </div>
-      <div class="service-title">
-        <h1>PARTNERS</h1>
-        <div class="about-line"></div>
-      </div>
-      <div class="image-relation">
-        <img src="./src/image-relation.png">
-      </div>
+    </section>
 
-      <div class="career-container">
-        <h2>Career History</h2>
-        <div class="about-line"></div>
+    <div class="relationship-container">
+      <h2 class="relationship-title">Partner</h2>
+      <p>佐久間株式会社は、日本国内での自動車技術会／キャパシタフォーラム／株式会社マテリアルイノベーションの他にも、中国や韓国のメーカーや大学と連携しております。</p>
+      <div class="image-relation">
+        <img src="src/1020-logo2.png" class="img-fluid" alt="Responsive image">
+      </div>
+    </div>
+
+    <div class="career-container" style="padding-bottom: 3rem;">
+      <h2 class="service-title">CAREER HISTORY</h2>
+      <div class="career-container-detail">
         <h3>日本ケミコン来歴</h3>
-        <p>
-          1986年入社</br>
-          1998年～2002年営業本部部長</br>
-          2002年～2007年ケミコン韓国代表理事</br>
-          2007年～2010年キャパシタ事業部企画部長</br>
-          2010年～2014年中国新事業推進部長、新事業推進室長</br>
-          2014年2月定年退職</br>
-        </p>
-        <div class="about-line"></div>
-        <h3>外部役員</h3>
-        <p>
-          自動車技術委員会「ワイヤレス技術委員会」委員</br>
-          自動車技術委員会「蓄電システム技術委員会」委員</br>
-          <a class="link-container" href="http://www.jsae.or.jp/">LINK</a>
-        </p>
-        <p>
-          キャパシタフォーラム副会長</br>
-          <a class="link-container" href="http://capacitors-forum.org/jp/">LINK</a>
-        </p>
-        <p>
-          元)東京農工大学産学連携研究員/次世代キャパシタ研究センター副代表</br>
-          <a class="link-container" href="www.tuat.ac.jp/.../20121005115258444724324.pdf">LINK</a>
-        </p>
-        <p>
-          株式会社マテリアルイノベーションつくば代表取締役社長</br>
-          <a class="link-container"
-          href="#">LINK</a>
-        </p>
-        <div class="about-line"></div>
-        <h3>執筆書籍</h3>
-        <p>日本エネルギー学会編２０１８年版<br>「大容量キャパシタ（電気を無駄なくためて賢く使う）」
-          </p>
+        <p>1986年入社</p>
+        <p>1998年～2002年営業本部部長</p>
+        <p>2002年～2007年ケミコン韓国代表理事</p>
+        <p>2007年～2010年キャパシタ事業部企画部長</p>
+        <p>2010年～2014年中国新事業推進部長、新事業推進室長</p>
+        <p>2014年2月定年退職</p>
+      </div>
+      <div class="career-container-detail">
+          <h3>外部役員</h3>
+          <div class="Jidosha">
+          <p>自動車技術委員会「ワイヤレス技術委員会」委員</p>
+          <p>自動車技術委員会「蓄電システム技術委員会」委員</p>
+          <div class="link-container">
+            <a href="http://www.jsae.or.jp/" target=”_blank”>自動車技術会へのリンクはこちら</a>
+          </div>
+        </div>
+        <div class="capacitors">
+          <p>キャパシタフォーラム副会長</p>
+          <div class="link-container">
+            <a href="http://capacitors-forum.org/jp/" target=”_blank”>キャパシタフォーラムへのリンクはこちら</a>
+          </div>
+        </div>
+        <div class="inovation">
+          <p>元)東京農工大学産学連携研究員<br>次世代キャパシタ研究センター副代表</p>
+          <p>株式会社マテリアルイノベーションつくば代表取締役社長</p>
+          <div class="link-container">
+            <a href="#">マテリアルイノベーションつくばへのリンクはこちら</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-container" style="background-image: url('src/green-background1.jpg'); background-repeat: no-repeat; padding: 2rem auto;">
+      <h3>執筆書籍</h3>
+      <div class="book-detail">
+        <p>日本エネルギー学会編２０１８年版<br>「大容量キャパシタ（電気を無駄なくためて賢く使う）」</p>
         <p>（連携大学）<br>上海交通大学新エネルギー研究院<br>北京交通大学電子・電気研究院<br>東京大学新領域創成；堀教授<br>東京農工大学；直井教授
         </p>
       </div>
-    </section>
-    <footer>
-      <div class="inner_footer">
-        <div class="logo_container">
-          <img src="src/logo-SC-white.png">
-          <p><i class="fas fa-map-marker-alt"> 〒115-
-            0056 東京都北区西が丘1-37-8-601</i></p>
-          <p><i class="fas fa-envelope"></i> sakufamily-energy54@ab.auone-net.jp</p>
-          <p><i class="fas fa-mobile-alt"></i> 0904941087</p>
-        </div>
-        <div class="footer-contents">
-          <h3>Contents</h3>
-          <ul>
-            <li>Top</li>
-            <li>About Us</li>
-            <li>Main</li>
-            <li>Contact</li>
-          </ul>
-        </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner_footer">
+      <div class="footer-inside logo_container">
+        <img src="src/logo-SC-white.png">
+        <p><i class="fas fa-map-marker-alt"> 〒115-
+          0056 東京都北区西が丘1-37-8-601</i></p>
+        <p><i class="fas fa-envelope"></i>  sakufamily-energy54@ab.auone-net.jp</p>
+        <p><i class="fas fa-mobile-alt"></i>  0904941087</p>
       </div>
-    </footer>
+      <div class="footer-inside footer-contents">
+        <h3>Contents</h3>
+        <ul>
+          <a href="index.html"><li>Top</li></a>
+          <a href="about.html"><li>About</li></a>
+          <a href="main.html"><li>Main</li></a>
+          <a href="contact.html"><li>Contact</li></a>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2020 sakuma,Inc All rights reserved.</p>
+    </div>
+  </footer>
 
     <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   </body>
 </html>

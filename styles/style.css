@@ -1,5 +1,7 @@
 @charset "UTF-8";
+/* BootstrapのSassが呼ばれていたので、同じ変数名を利用し、文字色スタイルの上書きをしています */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 footer {
@@ -9,62 +11,45 @@ footer {
   overflow: hidden;
   padding-top: 30px;
   background-color: #18181a;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-box-shadow: 4px -5px 27px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px -5px 27px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px -5px 27px -10px rgba(0, 0, 0, 0.75); }
   footer .inner_footer {
+    font-family: serif;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
     height: 100%;
     color: lightgray;
     padding: 0 2rem; }
-    footer .inner_footer .logo-container {
-      width: 35%;
-      height: 100%; }
-      footer .inner_footer .logo-container img {
-        width: 60px;
-        height: auto; }
+    footer .inner_footer .footer-inside p {
+      font-family: serif; }
     footer .inner_footer .footer-contents {
       color: lightgray; }
       footer .inner_footer .footer-contents h3 {
-        font-size: 1.8rem; }
+        font-size: 1.8rem;
+        font-family: serif; }
       footer .inner_footer .footer-contents ul {
         display: inline-flex;
         list-style: none; }
         footer .inner_footer .footer-contents ul li {
-          margin-left: 2rem; }
+          margin-left: 2rem;
+          font-family: serif;
+          color: white; }
   footer .footer-bottom {
     color: lightgray;
     background: black;
     text-align: center; }
     footer .footer-bottom p {
-      margin: 0; }
+      margin: 0;
+      font-family: serif; }
 
 @media screen and (min-width: 768px) {
   footer .inner_footer {
     grid-template-columns: 1fr 1fr; }
     footer .inner_footer .footer-inside {
       margin: 0 auto; } }
-.about-line {
-  display: block;
-  margin: auto;
-  width: 3rem;
-  height: 3px;
-  background: #3498db; }
-
-.link-container {
-  width: 3rem;
-  height: 4rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  padding: .5rem .5rem;
-  margin-top: 1rem;
-  cursor: pointer; }
-
-.link-container:hover {
-  color: black;
-  text-decoration: none;
-  cursor: pointer; }
-
 .about-container {
   font-family: serif;
   text-align: center;
@@ -79,30 +64,65 @@ footer {
     color: white;
     font-size: 40px; }
 
+.profile-title {
+  margin: 2rem 2rem;
+  padding-bottom: 1rem;
+  position: relative; }
+  .profile-title h3 {
+    color: #868686;
+    font-size: 1.2rem;
+    font-family: 'Cinzel', serif; }
+  .profile-title h3::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #66D15A;
+    position: absolute;
+    bottom: 0;
+    left: 5px; }
+
 .profile-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 2rem 1rem;
-  width: 90%;
-  margin: 3rem auto; }
-  .profile-container .photo-container img {
-    width: 12rem;
-    height: 12rem;
-    border-radius: 100px;
-    background-color: black; }
-  .profile-container .profile-detail {
-    align-items: center;
-    justify-content: center; }
-    .profile-container .profile-detail p {
-      background-color: #F5F5F5;
-      color: #868686;
-      width: 80%;
-      margin: 0 auto; }
-    .profile-container .profile-detail .career-link {
-      background-color: #3498db;
-      margin-top: 1rem;
-      height: 1.5rem;
-      color: white; }
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .profile-container .profile-inside-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem 1rem;
+    width: 90%;
+    margin: 0 auto; }
+    .profile-container .profile-inside-box .photo-container img {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 100px;
+      background-color: black; }
+
+.profile-detail {
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cinzel', serif; }
+  .profile-detail h2 {
+    margin-bottom: 1rem;
+    color: white; }
+  .profile-detail p {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: .5rem .5rem;
+    color: white;
+    margin: 1rem auto; }
+  .profile-detail .career-link {
+    /*階層が深すぎるので、浅くしました*/
+    background-color: #66D15A;
+    margin-top: 3rem;
+    height: 1.5rem;
+    color: white;
+    transition: all 300ms;
+    padding: .5rem 1rem;
+    box-shadow: 3px 3px 7px rgba(51, 51, 51, 0.3); }
+  .profile-detail .career-link:hover {
+    text-decoration: none;
+    background-color: #a11f1f; }
 
 .image-relation {
   display: grid;
@@ -112,17 +132,32 @@ footer {
     padding-left: 4rem; }
 
 .service-title {
-  color: white;
-  background-color: #333; }
+  color: #0d2c3f;
+  background-color: #EEF2F4;
+  padding: 5rem 0 1rem 2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  position: relative; }
+
+.service-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 5px;
+  background-color: #66D15A;
+  position: absolute;
+  bottom: 0;
+  left: 2.5rem; }
 
 .services-container {
-  margin: 1rem 0 1rem 0; }
+  padding: 3rem 0;
+  background-color: #EEF2F4; }
   .services-container .service {
-    border: solid 1px white;
+    text-align: center;
     padding: 0 1rem;
     width: 80%;
     margin: 1rem auto;
-    background-color: #EEF2F4; }
+    background-color: white; }
     .services-container .service .icon {
       width: 60%;
       margin: 0 auto; }
@@ -135,40 +170,92 @@ footer {
   .services-container h3, .services-container p {
     color: grey; }
 
+.relationship-container {
+  margin-right: 5rem; }
+  .relationship-container .relationship-title {
+    color: #0d2c3f;
+    padding: 2rem 0 1rem 2rem;
+    margin-bottom: 0;
+    font-weight: 600;
+    position: relative; }
+  .relationship-container p {
+    padding: 1rem 0 1rem 2rem; }
+  .relationship-container .relationship-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 5px;
+    background-color: #66D15A;
+    position: absolute;
+    bottom: 0;
+    left: 2.5rem; }
+
 .career-container {
-  padding-top: 2rem;
-  text-align: center;
+  padding: 3rem auto; }
+
+.career-container {
   justify-content: center;
-  color: #868686; }
-  .career-container h2 {
-    text-transform: uppercase;
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 40px; }
-  .career-container h3 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    color: black; }
-  .career-container p {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-    margin-top: 2rem; }
+  background-color: #EEF2F4; }
+  .career-container .career-container-detail {
+    text-align: center;
+    color: #868686;
+    width: 60%; }
+    .career-container .career-container-detail h3 {
+      font-size: 1.5rem;
+      margin: 1rem auto;
+      color: black;
+      text-align: left; }
+    .career-container .career-container-detail p {
+      text-align: left; }
+    .career-container .career-container-detail .link-container {
+      border: black solid 2px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 300ms;
+      box-shadow: 5px 5px 7px rgba(51, 51, 51, 0.3); }
+      .career-container .career-container-detail .link-container a {
+        margin: 1rem auto;
+        text-decoration: none;
+        text-align: left;
+        color: black; }
+    .career-container .career-container-detail .link-container:hover {
+      text-decoration: none;
+      cursor: pointer;
+      color: white; }
+
+.book-container {
+  padding: 2rem auto;
+  color: white; }
+
+.book-detail p {
+  margin-bottom: 0; }
 
 @media screen and (min-width: 768px) {
-  .profile-container {
+  .profile-container .profile-inside-box {
     display: grid;
-    grid-template-columns: 15rem 1fr; }
+    grid-template-columns: 1fr 1fr; }
 
   .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 0;
-    margin: 2rem 1rem; }
+    grid-column-gap: 10px;
+    padding: 2rem 1rem; }
     .services-container .service {
       width: 100%;
       margin: 1rem auto; } }
+@media screen and (min-width: 320px) {
+  .profile-container .profile-inside-box {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+    width: 90%;
+    text-align: center; }
+
+  .photo-container {
+    margin: 1rem auto; }
+
+  .profile-detail {
+    margin: 2rem auto; } }
 .carousel {
   padding-top: 2.5rem;
   overflow: scroll;
@@ -293,7 +380,8 @@ footer {
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'メイリオ', 'Meiryo', sans-serif; }
 
 body {
   font-family: 'Poppins', sans-serif; }
@@ -305,17 +393,10 @@ body {
     width: 100%; }
 
 nav {
-  position: relative; }
-
-nav::after {
-  content: "";
-  display: block;
-  width: 100vw;
-  height: 3px;
-  background-color: #0097A7;
-  position: absolute;
-  bottom: 0;
-  left: 0; }
+  position: relative;
+  -webkit-box-shadow: 1px 10px 22px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 22px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 10px -4px rgba(0, 0, 0, 0.75); }
 
 .nav-item {
   font-family: serif; }
@@ -334,7 +415,10 @@ nav::after {
   height: 100vh;
   z-index: -100;
   overflow: hidden;
-  /*ブラー効果でボヤけた部分を非表示*/ }
+  /*ブラー効果でボヤけた部分を非表示*/
+  -webkit-box-shadow: 1px 10px 22px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 10px 22px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 3px 10px -4px rgba(0, 0, 0, 0.75); }
 
 /*:beforeにぼかし効果を設定する*/
 .top-image:before {
@@ -364,6 +448,9 @@ nav::after {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center; }
+  .message-box h1 {
+    font-family: 'Crimson Text', serif;
+    font-size: 4rem; }
 
 .link-box {
   width: 4rem;

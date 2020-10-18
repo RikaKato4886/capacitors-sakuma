@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+body{
+  background-image: url(../src/moyou1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100;
+  // overflow: hidden;
+}
+
 // ----------Whole AREA& TITLE----------- //
 .contact{
-  position: relative;
   min-height: 100vh;
-  padding: 50px 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background:#4D76A4;
+  padding: 20px 100px;
   background-size: cover;
   .content{
     max-width: 800px;
@@ -20,23 +22,23 @@
     }
   }
 }
-
 // -------------ADDRESS AREA-------------- //
 .info-container {
-  display: flex;
+  display: grid;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 30px;
   .contact-infor{
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    margin-right: 2rem;
+    margin: 0 auto;
     .info-box{
       position: relative;
       padding: 20px 0;
       display: flex;
+      margin: 0 auto;
       .icon{
         width: 60px;
         height: 60px;
@@ -44,6 +46,8 @@
         background: white;
         justify-content: center;
         align-items: center;
+        margin-bottom: 5px;
+        margin-left: 10px;
         i{
           margin-left: 1.5rem;
           margin-top: 1.4rem;
@@ -51,6 +55,7 @@
       }
       .text {
         margin-left: 1rem;
+        text-align: center;
       }
     }
   }
@@ -80,17 +85,27 @@
   }
 }
 
-@media screen and (min-width: 320px) {
-  //-------CONTACT FORM--------//
+@media screen and (min-width: 768px) {
+  .info-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    .info-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3{
+        text-align: center;
+      }
+    }
+  }
+}
 
+@media screen and (min-width: 320px) {
   .contact {
     overflow: hidden;
   }
-
   .info-container {
-    flex-direction: column;
     .info-box{
-      // display: flex;
       flex-direction: column;
       align-items: center;
       h3{

@@ -171,7 +171,9 @@ footer {
     color: grey; }
 
 .relationship-container {
-  margin-right: 5rem; }
+  margin-right: 5rem;
+  background: white;
+  width: 100%; }
   .relationship-container .relationship-title {
     color: #0d2c3f;
     padding: 2rem 0 1rem 2rem;
@@ -199,7 +201,8 @@ footer {
   .career-container .career-container-detail {
     text-align: center;
     color: #868686;
-    width: 60%; }
+    width: 60%;
+    margin: 3rem auto; }
     .career-container .career-container-detail h3 {
       font-size: 1.5rem;
       margin: 1rem auto;
@@ -208,6 +211,7 @@ footer {
     .career-container .career-container-detail p {
       text-align: left; }
     .career-container .career-container-detail .link-container {
+      width: 20rem;
       border: black solid 2px;
       border-radius: 5px;
       cursor: pointer;
@@ -224,11 +228,28 @@ footer {
       color: white; }
 
 .book-container {
-  padding: 2rem auto;
+  height: 30rem;
+  background-image: url("../src/pen-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white; }
+  .book-container h3 {
+    background-color: #66D15A;
+    height: 3rem;
+    align-self: center; }
 
-.book-detail p {
-  margin-bottom: 0; }
+.book-detail {
+  padding-left: 1rem; }
+  .book-detail .book {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    align-items: center; }
+  .book-detail p {
+    margin-bottom: 0; }
+  .book-detail .book-link {
+    display: block;
+    width: 6rem;
+    height: auto; }
 
 @media screen and (min-width: 768px) {
   .profile-container .profile-inside-box {
@@ -303,15 +324,15 @@ footer {
     text-decoration: none;
     background-color: rgba(0, 0, 0, 0.6); }
 
+body {
+  background-image: url(../src/moyou1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -100; }
+
 .contact {
-  position: relative;
   min-height: 100vh;
-  padding: 50px 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background: #4D76A4;
+  padding: 20px 100px;
   background-size: cover; }
   .contact .content {
     max-width: 800px; }
@@ -321,32 +342,36 @@ footer {
       color: black; }
 
 .info-container {
-  display: flex;
+  display: grid;
   width: 100%;
   justify-content: center;
   align-items: center;
   margin-top: 30px; }
   .info-container .contact-infor {
-    width: 50%;
+    width: 70%;
     display: flex;
     flex-direction: column;
-    margin-right: 2rem; }
+    margin: 0 auto; }
     .info-container .contact-infor .info-box {
       position: relative;
       padding: 20px 0;
-      display: flex; }
+      display: flex;
+      margin: 0 auto; }
       .info-container .contact-infor .info-box .icon {
         width: 60px;
         height: 60px;
         border-radius: 50%;
         background: white;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        margin-bottom: 5px;
+        margin-left: 10px; }
         .info-container .contact-infor .info-box .icon i {
           margin-left: 1.5rem;
           margin-top: 1.4rem; }
       .info-container .contact-infor .info-box .text {
-        margin-left: 1rem; }
+        margin-left: 1rem;
+        text-align: center; }
 
 .contactform-container {
   background: white;
@@ -366,17 +391,25 @@ footer {
       width: 100%;
       padding: 5px 0; }
 
-@media screen and (min-width: 320px) {
-  .contact {
-    overflow: hidden; }
-
+@media screen and (min-width: 768px) {
   .info-container {
-    flex-direction: column; }
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem; }
     .info-container .info-box {
+      display: flex;
       flex-direction: column;
       align-items: center; }
       .info-container .info-box h3 {
         text-align: center; } }
+@media screen and (min-width: 320px) {
+  .contact {
+    overflow: hidden; }
+
+  .info-container .info-box {
+    flex-direction: column;
+    align-items: center; }
+    .info-container .info-box h3 {
+      text-align: center; } }
 * {
   margin: 0px;
   padding: 0px;

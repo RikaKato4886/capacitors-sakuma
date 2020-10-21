@@ -57,40 +57,38 @@
     padding: 2rem 1rem;
     width: 90%;
     margin: 0 auto;
-    .photo-container {
-      img {
-        width: 12rem;
-        height: 12rem;
-        border-radius: 100px;
-        background-color: black;
-      }
-    }
   }
 }
 
 .profile-detail{
   align-items: center;
   justify-content: center;
-  font-family: 'Cinzel', serif;
-  h2{
+  .wf-sawarabigothic {
+    font-family: "Sawarabi Gothic";
+  }
+  h1{
     margin-bottom: 1rem;
+    padding: 5rem 0;
     color: white;
+    font-weight: 900;
+    font-size: 4rem;
   }
   p{
-    background-color: rgba($color: #000000, $alpha: 0.3);
     padding: .5rem .5rem;
     color: white;
     margin: 1rem auto;
+    padding: 2rem 0;
+    width: 80%;
   }
   .career-link{/*階層が深すぎるので、浅くしました*/
     background-color: #66D15A;
-    margin-top: 3rem;
-    height: 1.5rem;
     // color: $link-color;/* BootstrapのSassが呼ばれていたので、同じ変数名を利用し、文字色スタイルの上書きをしています */
     color:white;
     transition: all 300ms;
-    padding: .5rem 1rem;
-    box-shadow: 3px 3px 7px hsla(198, 0%, 20%, 0.3);;
+    padding: 1rem;
+    box-shadow: 3px 3px 7px hsla(198, 0%, 20%, 0.3);
+    border-radius: 3px;
+    font-size: 1.2rem;
   }
   .career-link:hover{
     text-decoration: none;
@@ -288,15 +286,12 @@
     .profile-inside-box{
       display: grid;
       grid-template-columns: 1fr;
-      padding: 2rem 1rem;
-      width: 90%;
+      padding: 10rem 1rem;
+      width: 100%;
       text-align: center;
     }
   }
 
-  .photo-container{
-    margin: 1rem auto;
-  }
   .profile-detail{
     margin: 2rem auto;
   }

@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
 
+.sub-title{
+  width: 70%;
+  margin: 0 auto;
+}
+
 .carousel {
   padding-top: 2.5rem;
   overflow: scroll;
@@ -38,6 +43,7 @@
 .card{
   margin-bottom: 10rem;
   .card-body{
+    border-top: solid .1px lightgray;
     .card-title{
       font-size: 20px;
     }

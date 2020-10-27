@@ -23,6 +23,10 @@ nav{
   box-shadow: 1px 3px 10px -4px rgba(0,0,0,0.75);
 }
 
+.nav-bar-index{
+  background-color: #18181a;
+}
+
 .nav-item{
   font-family: serif;
 }
@@ -32,64 +36,29 @@ nav{
   border: none;
 }
 
-//--------------BACKGROUND IMAGE --------------------//
-
-.top-image{
-  background: url(../src/back-image4.jpg);
-  display: table;
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-  height: 100vh;
-  z-index: -100;
-  overflow: hidden;
-  /*ブラー効果でボヤけた部分を非表示*/
-  -webkit-box-shadow: 1px 10px 22px -4px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px 10px 22px -4px rgba(0,0,0,0.75);
-  box-shadow: 1px 3px 10px -4px rgba(0,0,0,0.75);
-}
-
-/*:beforeにぼかし効果を設定する*/
-.top-image:before{
-  content: '';
-  background: inherit;/*.bgImageで設定した背景画像を継承する*/
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
-  position: absolute;
-  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
-  top: -5px;
-  left: -5px;
-  right: -5px;
-  bottom: -5px;
-  z-index: -1;/*重なり順序を一番下にしておく*/
-}
-
 .message-box {
   color: white;
   position: absolute;
-  top: 60%;
+  top: 65%;
   left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-  text-align: center;
+  text-align: left;
   h1{
     font-family: 'Crimson Text', serif;
-    font-size: 4rem;
+    font-size: 7rem;
+    margin-bottom: 2rem;
   }
 }
 
 .link-box {
   width: 4rem;
   height: 4rem;
-  background-color: rgba($color: #000000, $alpha: 0.3);
   color: white;
   padding: .5rem .5rem;
   margin-top: 1rem;
+  border-bottom-width: thin 1px white;
 }
 
 .link-box:hover{
@@ -99,12 +68,23 @@ nav{
 }
 
 @media screen and (min-width: 768px) {
-  .navbar-nav {
-    margin: 0 0 0 auto;
+  .message-box {
+    top: 60%;
+    left: 50%;
   }
-  .nav-item{
-    margin-left: 2rem;
+  .message-box h1{
+      font-size: 5rem;
   }
+}
 
+
+@media screen and (min-width: 320px) {
+  .message-box {
+    top: 40%;
+    left: 50%;
+    h1{
+      font-size: 3rem;
+    }
+  }
 }
 

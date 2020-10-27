@@ -194,7 +194,7 @@
   }
   p {
     text-align: left;
-    margin-bottom: 2px;
+    // margin-bottom: 1rem;
     color: #222525;
   }
 }
@@ -204,6 +204,7 @@
     width: 40%;
     background-color: #078080;
     border-radius: 5px;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: all 300ms;
     box-shadow: 5px 5px 7px rgba(51, 51, 51, 0.3);
@@ -213,11 +214,14 @@
     }
   }
 }
+.fa-angle-right{
+  margin-left: .5rem;
+}
 
-//----------BOOK DETAIL--------------//
+//--------------------BOOK DETAIL------------------//
 .book-container{
   height: auto;
-  background-color: #e3f6f5;
+  background-color: #232D3B;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 3rem;
@@ -227,6 +231,10 @@
     height: 3rem;
     align-self: center;
   }
+
+  .book-title{
+    color: #f8f5f2;
+  }
 }
 
 .book-detail{
@@ -234,21 +242,23 @@
   text-align: center;
   .book{
     align-items: center;
-    margin-bottom: 1rem;
+    color: #fffffe;
   }
   p{
     margin-bottom: 0;
   }
   .book-link{
-    width: 6rem;
+    background-color:white;
+    width: 15rem;
     height: auto;
-    margin: 0 auto;
+    margin: 1rem auto;
   }
 }
 
 .book-uni{
-  background-color: #fffffe;
-  width: 45%;
+  margin: 3rem auto;
+  color: #f8f5f2;
+  width: 50%;
   margin: 0 auto;
 }
 

@@ -39,8 +39,6 @@ nav{
 .message-box {
   color: white;
   position: absolute;
-  top: 65%;
-  left: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
@@ -70,21 +68,63 @@ nav{
 
 @media screen and (min-width: 320px) {
   .message-box {
+    top: 30%;
+    left: 50%;
+    h1{
+      font-size: 2rem;
+      margin-bottom: .3rem;
+    }
+    a{
+      span{
+        font-size: small;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 414px) {
+  .message-box {
     top: 40%;
     left: 50%;
     h1{
       font-size: 3rem;
+      margin-bottom: .8rem;
+    }
+    a{
+      span{
+        font-size: medium;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .message-box {
+    top: 49%;
+    left: 50%;
+    h1{
+      font-size: 4.3rem;
+    }
+    a{
+      span{
+        font-size: larger;
+      }
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .message-box {
-    top: 60%;
+    top: 55%;
     left: 50%;
-  }
-  .message-box h1{
+    h1{
       font-size: 5rem;
+    }
+    a{
+      span{
+        font-size: x-large;
+      }
+    }
   }
 }
 

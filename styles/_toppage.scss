@@ -67,16 +67,6 @@ nav{
   background-color: rgba($color: white, $alpha: 0.6);
 }
 
-@media screen and (min-width: 768px) {
-  .message-box {
-    top: 60%;
-    left: 50%;
-  }
-  .message-box h1{
-      font-size: 5rem;
-  }
-}
-
 
 @media screen and (min-width: 320px) {
   .message-box {
@@ -85,6 +75,16 @@ nav{
     h1{
       font-size: 3rem;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .message-box {
+    top: 60%;
+    left: 50%;
+  }
+  .message-box h1{
+      font-size: 5rem;
   }
 }
 

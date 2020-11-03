@@ -94,10 +94,6 @@ footer {
     color: #222525;
     font-weight: 900;
     font-size: 3rem; }
-  .profile-detail p {
-    color: #222525;
-    margin: 1rem auto;
-    width: 80%; }
   .profile-detail .name-container {
     margin-bottom: 2rem; }
   .profile-detail .career-link {
@@ -146,7 +142,8 @@ footer {
     padding: 1rem 2rem;
     justify-items: left; }
     .services-container .service-detail h3 {
-      color: #232323; }
+      color: #232323;
+      margin-bottom: 1rem; }
     .services-container .service-detail p {
       color: #222525;
       text-align: left; }
@@ -365,6 +362,9 @@ footer {
       padding: 5px 0; }
     .contactform-container .input-box textarea {
       height: 6rem; }
+
+.submit-container {
+  text-align: right; }
 
 .submit-container {
   text-align: right; }

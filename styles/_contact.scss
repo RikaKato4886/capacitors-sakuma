@@ -10,8 +10,7 @@
 
 // ----------Whole AREA& TITLE----------- //
 .contact{
-  min-height: 100vh;
-  padding: 20px 100px;
+  padding: 50px 50px;
   background-size: cover;
   .content{
     max-width: 800px;
@@ -47,14 +46,12 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 5px;
-        margin-left: 10px;
         i{
           margin-left: 1.5rem;
           margin-top: 1.4rem;
         }
       }
       .text {
-        margin-left: 1rem;
         text-align: center;
       }
     }
@@ -64,7 +61,6 @@
 // -------------FORM AREA-------------- //
 .contactform-container{
   background: white;
-  // width: 80%;
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -78,23 +74,37 @@
     position: relative;
     width: 100%;
     margin-top: 10px;
-    input, textarea{
+    input, textarea {
       width: 100%;
       padding: 5px 0;
+    }
+    textarea {
+      height: 6rem;
     }
   }
 }
 
-.submit {
-  background-color: #078080;
+.submit-container{
+  text-align: right;
 }
 
-@media screen and (min-width: 768px) {
+.submit {
+  background-color: #078080;
+  border: none;
+  color: white;
+  width: 7rem;
+  margin: 5px auto;
+  padding: 6px;
+}
+
+//------------RESPONSIVE DESIGN-------------------//
+
+@media screen and (min-width: 320px) {
+  .contact {
+    overflow: hidden;
+  }
   .info-container {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 1rem;
     .info-box{
-      display: flex;
       flex-direction: column;
       align-items: center;
       h3{
@@ -104,12 +114,12 @@
   }
 }
 
-@media screen and (min-width: 320px) {
-  .contact {
-    overflow: hidden;
-  }
+@media screen and (min-width: 768px) {
   .info-container {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
     .info-box{
+      display: flex;
       flex-direction: column;
       align-items: center;
       h3{

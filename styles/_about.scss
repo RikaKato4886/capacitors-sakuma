@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap');
-
-
 //------------- TITLE DETAILS ----------------//
 
 .about-container {
@@ -15,43 +11,20 @@
   .about-title h1 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: white;
+    color: #222525;
     font-size: 40px;
   }
 }
 
-
 //------------- CAREER Summary&TOP----------------//
 
-.profile-title{
-  margin: 2rem 2rem;
-  padding-bottom: 1rem;
-  position: relative;
-  h3{
-    color: $lightGrey;
-    font-size: 1.2rem;
-    font-family: 'Cinzel', serif;
-  }
-  h3::after{
-    content:"";
-    display:block;
-    width:80px;
-    height:5px;
-    background-color:#66D15A;
-    position:absolute;
-    bottom:0;
-    left:5px;
-  }
-}
-
 .profile-container {
-  height: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 3rem;
+  // background-color: #f8f5f2;
   .profile-inside-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 2rem 1rem;
     width: 90%;
     margin: 0 auto;
@@ -59,28 +32,28 @@
 }
 
 .profile-detail{
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   .wf-sawarabigothic {
     font-family: "Sawarabi Gothic";
   }
   h1{
-    margin-bottom: 1rem;
-    padding: 3rem 0;
-    color: white;
+    padding: 3rem 0 .5rem 0;
+    color: #222525;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 3rem;
   }
   p{
-    padding: .5rem .5rem;
-    color: white;
+    color: #222525;
     margin: 1rem auto;
-    padding: 2rem 0;
     width: 80%;
   }
+
+  .name-container{
+    margin-bottom: 2rem;
+  }
+
   .career-link{
     background-color: #078080;
-    // color: $link-color;/* BootstrapのSassが呼ばれていたので、同じ変数名を利用し、文字色スタイルの上書きをしています */
     color:white;
     transition: all 300ms;
     padding: 1rem;
@@ -93,16 +66,6 @@
     background-color: #086e6e;
   }
 }
-
-.image-relation {
-  display: grid;
-  grid-template-columns: 1fr;
-  img{
-    margin: 0 auto;
-    padding-left: 4rem;
-  }
-}
-
 
 //------------- SERVICE DETAILS ----------------//
 
@@ -126,12 +89,11 @@
   padding: 3rem 0;
   background-color: #fffffe;
   .service{
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
     padding: 0 1rem;
     width: 80%;
     margin: 1rem auto;
-    // background-color: $grey;
     background-color: #f8f5f2;
     .icon{
       width: 60%;
@@ -185,7 +147,7 @@
   width: 80%;
   margin: 1.5rem auto;
   padding: 1rem 2rem;
-  border-radius: 20px;
+  border-radius: 5px;
   h2{
     font-size: 1.5rem;
     margin: 1rem auto;
@@ -239,11 +201,13 @@
 }
 
 .book-detail{
-  padding-left: 1rem;
   text-align: center;
   .book{
     align-items: center;
     color: #fffffe;
+    h4, p{
+      padding: 0 2rem;
+    }
   }
   p{
     margin-bottom: 0;
@@ -266,12 +230,6 @@
 //----------------MEDIA QUERY--------------------//
 
 @media screen and (min-width: 768px) {
-  .profile-container {
-    .profile-inside-box{
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-  }
   .services-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -281,23 +239,5 @@
       width: 100%;
       margin: 1rem auto;
     }
-  }
-
-
-}
-
-@media screen and (min-width: 320px) {
-  .profile-container{
-    .profile-inside-box{
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 3rem 1rem;
-      width: 100%;
-      text-align: center;
-    }
-  }
-
-  .profile-detail{
-    margin: 2rem auto;
   }
 }

@@ -1,18 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap');
 
-.sub-title{
-  width: 70%;
-  margin: 0 auto;
-}
-
 .carousel {
   overflow: scroll;
 }
 
-
 .carousel-contaner{
   overflow: scroll;
-  background-color: #F3F2EF;
 }
 
 .top-title{
@@ -32,22 +25,33 @@
 .sub-title{
   text-align: center;
   padding: 2rem 3rem;
+  h2{
+    font-weight: 900;
+  }
   p{
     color: $lightGrey;
   }
 }
 
-.col-md-3{
-  padding: 0 5px;
-}
-
 .card{
   margin-bottom: 10rem;
-  border-radius: 10px;
+  border-radius: 5px;
   .card-body{
     border-top: solid .1px lightgray;
     .card-title{
       font-size: 20px;
+    }
+
+    .date-panel{
+      width: 7rem;
+      height: auto;
+      background-color: #F45D48;
+      border: none;
+      color: white;
+      border-radius: 3px;
+      padding: .3rem 1rem;
+      font-size: 13px;
+      margin-left: 5px;
     }
     .card-text{
       color: $lightGrey;
@@ -55,7 +59,7 @@
     .btn{
       width: 5rem;
       height: auto;
-      background-color: #1818;
+      background-color: #078080;
       // background-color: rgba($color: black, $alpha: 0.4);
       color: white;
       padding: .5rem .5rem;
@@ -64,9 +68,8 @@
       cursor: pointer;
     }
     .btn:hover{
-      color: black;
       text-decoration: none;
-      background-color: rgba($color: black, $alpha: 0.6);
+      background-color: #066969;
     }
   }
 }

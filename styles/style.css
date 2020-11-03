@@ -1,7 +1,5 @@
 @charset "UTF-8";
 /* BootstrapのSassが呼ばれていたので、同じ変数名を利用し、文字色スタイルの上書きをしています */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 footer {
@@ -45,7 +43,7 @@ footer {
       margin: 0;
       font-family: serif; }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 280px) {
   footer .inner_footer .footer-contents h3 {
     font-size: 1.3rem; }
   footer .inner_footer .footer-contents li {
@@ -74,56 +72,34 @@ footer {
   .about-container .about-title h1 {
     text-transform: uppercase;
     margin-bottom: 30px;
-    color: white;
+    color: #222525;
     font-size: 40px; }
 
-.profile-title {
-  margin: 2rem 2rem;
-  padding-bottom: 1rem;
-  position: relative; }
-  .profile-title h3 {
-    color: #868686;
-    font-size: 1.2rem;
-    font-family: 'Cinzel', serif; }
-  .profile-title h3::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 5px;
-    background-color: #66D15A;
-    position: absolute;
-    bottom: 0;
-    left: 5px; }
-
 .profile-container {
-  height: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  margin-bottom: 3rem; }
   .profile-container .profile-inside-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 2rem 1rem;
     width: 90%;
     margin: 0 auto; }
 
 .profile-detail {
-  align-items: center;
-  justify-content: center; }
+  text-align: center; }
   .profile-detail .wf-sawarabigothic {
     font-family: "Sawarabi Gothic"; }
   .profile-detail h1 {
-    margin-bottom: 1rem;
-    padding: 3rem 0;
-    color: white;
+    padding: 3rem 0 .5rem 0;
+    color: #222525;
     font-weight: 900;
-    font-size: 4rem; }
+    font-size: 3rem; }
   .profile-detail p {
-    padding: .5rem .5rem;
-    color: white;
+    color: #222525;
     margin: 1rem auto;
-    padding: 2rem 0;
     width: 80%; }
+  .profile-detail .name-container {
+    margin-bottom: 2rem; }
   .profile-detail .career-link {
     background-color: #078080;
     color: white;
@@ -135,13 +111,6 @@ footer {
   .profile-detail .career-link:hover {
     text-decoration: none;
     background-color: #086e6e; }
-
-.image-relation {
-  display: grid;
-  grid-template-columns: 1fr; }
-  .image-relation img {
-    margin: 0 auto;
-    padding-left: 4rem; }
 
 .title-container {
   text-align: center;
@@ -160,7 +129,7 @@ footer {
   padding: 3rem 0;
   background-color: #fffffe; }
   .services-container .service {
-    border-radius: 20px;
+    border-radius: 5px;
     text-align: center;
     padding: 0 1rem;
     width: 80%;
@@ -205,7 +174,7 @@ footer {
   width: 80%;
   margin: 1.5rem auto;
   padding: 1rem 2rem;
-  border-radius: 20px; }
+  border-radius: 5px; }
   .career-container-detail h2 {
     font-size: 1.5rem;
     margin: 1rem auto;
@@ -245,11 +214,12 @@ footer {
     color: #f8f5f2; }
 
 .book-detail {
-  padding-left: 1rem;
   text-align: center; }
   .book-detail .book {
     align-items: center;
     color: #fffffe; }
+    .book-detail .book h4, .book-detail .book p {
+      padding: 0 2rem; }
   .book-detail p {
     margin-bottom: 0; }
   .book-detail .book-link {
@@ -265,10 +235,6 @@ footer {
   margin: 0 auto; }
 
 @media screen and (min-width: 768px) {
-  .profile-container .profile-inside-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr; }
-
   .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -277,26 +243,11 @@ footer {
     .services-container .service {
       width: 100%;
       margin: 1rem auto; } }
-@media screen and (min-width: 320px) {
-  .profile-container .profile-inside-box {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 3rem 1rem;
-    width: 100%;
-    text-align: center; }
-
-  .profile-detail {
-    margin: 2rem auto; } }
-.sub-title {
-  width: 70%;
-  margin: 0 auto; }
-
 .carousel {
   overflow: scroll; }
 
 .carousel-contaner {
-  overflow: scroll;
-  background-color: #F3F2EF; }
+  overflow: scroll; }
 
 .top-title {
   background-color: #18181a;
@@ -312,34 +263,42 @@ footer {
 .sub-title {
   text-align: center;
   padding: 2rem 3rem; }
+  .sub-title h2 {
+    font-weight: 900; }
   .sub-title p {
     color: #868686; }
 
-.col-md-3 {
-  padding: 0 5px; }
-
 .card {
   margin-bottom: 10rem;
-  border-radius: 10px; }
+  border-radius: 5px; }
   .card .card-body {
     border-top: solid .1px lightgray; }
     .card .card-body .card-title {
       font-size: 20px; }
+    .card .card-body .date-panel {
+      width: 7rem;
+      height: auto;
+      background-color: #F45D48;
+      border: none;
+      color: white;
+      border-radius: 3px;
+      padding: .3rem 1rem;
+      font-size: 13px;
+      margin-left: 5px; }
     .card .card-body .card-text {
       color: #868686; }
     .card .card-body .btn {
       width: 5rem;
       height: auto;
-      background-color: #1818;
+      background-color: #078080;
       color: white;
       padding: .5rem .5rem;
       border: none;
       border-radius: 0;
       cursor: pointer; }
     .card .card-body .btn:hover {
-      color: black;
       text-decoration: none;
-      background-color: rgba(0, 0, 0, 0.6); }
+      background-color: #066969; }
 
 .contact-body {
   background-image: url(../src/moyou1.jpg);
@@ -348,8 +307,7 @@ footer {
   z-index: -100; }
 
 .contact {
-  min-height: 100vh;
-  padding: 20px 100px;
+  padding: 50px 50px;
   background-size: cover; }
   .contact .content {
     max-width: 800px; }
@@ -381,13 +339,11 @@ footer {
         background: white;
         justify-content: center;
         align-items: center;
-        margin-bottom: 5px;
-        margin-left: 10px; }
+        margin-bottom: 5px; }
         .info-container .contact-infor .info-box .icon i {
           margin-left: 1.5rem;
           margin-top: 1.4rem; }
       .info-container .contact-infor .info-box .text {
-        margin-left: 1rem;
         text-align: center; }
 
 .contactform-container {
@@ -407,10 +363,29 @@ footer {
     .contactform-container .input-box input, .contactform-container .input-box textarea {
       width: 100%;
       padding: 5px 0; }
+    .contactform-container .input-box textarea {
+      height: 6rem; }
+
+.submit-container {
+  text-align: right; }
 
 .submit {
-  background-color: #078080; }
+  background-color: #078080;
+  border: none;
+  color: white;
+  width: 7rem;
+  margin: 5px auto;
+  padding: 6px; }
 
+@media screen and (min-width: 320px) {
+  .contact {
+    overflow: hidden; }
+
+  .info-container .info-box {
+    flex-direction: column;
+    align-items: center; }
+    .info-container .info-box h3 {
+      text-align: center; } }
 @media screen and (min-width: 768px) {
   .info-container {
     grid-template-columns: 1fr 1fr;
@@ -421,15 +396,6 @@ footer {
       align-items: center; }
       .info-container .info-box h3 {
         text-align: center; } }
-@media screen and (min-width: 320px) {
-  .contact {
-    overflow: hidden; }
-
-  .info-container .info-box {
-    flex-direction: column;
-    align-items: center; }
-    .info-container .info-box h3 {
-      text-align: center; } }
 * {
   margin: 0px;
   padding: 0px;
@@ -458,64 +424,53 @@ nav {
   cursor: pointer;
   border: none; }
 
-.message-box {
-  color: white;
+.carousel-img {
+  position: relative; }
+
+.carousel-caption {
   position: absolute;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: left; }
-  .message-box h1 {
+  top: 30%; }
+  .carousel-caption .display-2 {
+    font-family: 'Crimson Text', serif; }
+  .carousel-caption .top-button {
     font-family: 'Crimson Text', serif;
-    font-size: 7rem;
-    margin-bottom: 2rem; }
+    color: white;
+    border: none; }
 
-.link-box {
-  width: 4rem;
-  height: 4rem;
-  color: white;
-  padding: .5rem .5rem;
-  margin-top: 1rem;
-  border-bottom-width: thin 1px white; }
-
-.link-box:hover {
-  color: black;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.6); }
-
-@media screen and (min-width: 320px) {
-  .message-box {
-    top: 30%;
-    left: 50%; }
-    .message-box h1 {
-      font-size: 2rem;
-      margin-bottom: .3rem; }
-    .message-box a span {
+@media screen and (min-width: 280px) {
+  .carousel-caption {
+    top: 15%; }
+    .carousel-caption .display-2 {
+      font-size: 1rem; }
+    .carousel-caption .top-button {
       font-size: small; } }
-@media screen and (min-width: 414px) {
-  .message-box {
-    top: 40%;
-    left: 50%; }
-    .message-box h1 {
-      font-size: 3rem;
-      margin-bottom: .8rem; }
-    .message-box a span {
+@media screen and (min-width: 320px) {
+  .carousel-caption {
+    top: 15%; }
+    .carousel-caption .display-2 {
+      font-size: 2rem; }
+    .carousel-caption .top-button {
+      font-size: small; } }
+@media screen and (min-width: 410px) {
+  .carousel-caption {
+    top: 17%; }
+    .carousel-caption .display-2 {
+      font-size: 2.7rem; }
+    .carousel-caption .top-button {
       font-size: medium; } }
 @media screen and (min-width: 576px) {
-  .message-box {
-    top: 49%;
-    left: 50%; }
-    .message-box h1 {
+  .carousel-caption {
+    top: 11%; }
+    .carousel-caption .display-2 {
       font-size: 4.3rem; }
-    .message-box a span {
+    .carousel-caption .top-button {
       font-size: larger; } }
 @media screen and (min-width: 768px) {
-  .message-box {
-    top: 55%;
-    left: 50%; }
-    .message-box h1 {
+  .carousel-caption {
+    top: 25%; }
+    .carousel-caption .display-2 {
       font-size: 5rem; }
-    .message-box a span {
+    .carousel-caption .top-button {
       font-size: x-large; } }
 
 /*# sourceMappingURL=style.css.map */

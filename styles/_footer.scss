@@ -52,29 +52,29 @@ footer{
   }
 }
 
+@media screen and (min-width: 280px) {
 
-
-@media screen and (min-width: 320px) {
-footer{
-  .inner_footer{
-    .footer-contents{
-      h3{
-        font-size: 1.3rem;
-      }
-      li{
-        font-size: 12px;
+  footer{
+    .inner_footer{
+      .footer-contents{
+        h3{
+          font-size: 1.3rem;
+        }
+        li{
+          font-size: 12px;
+        }
       }
     }
   }
-}
-.footer-inside{
-  p{
-    font-size: 12px;
+
+  .footer-inside{
+    p{
+      font-size: 12px;
+    }
+    i{
+      font-size: 12px;
+    }
   }
-  i{
-    font-size: 12px;
-  }
-}
 }
 
 @media screen and (min-width: 414px) {

@@ -5,7 +5,7 @@ footer{
   width: 100vw;
   display: block;
   overflow: hidden;
-  padding-top: 30px;
+  padding-top: 20px;
   background-color: #18181a;
   margin: 0 auto;
   -webkit-box-shadow: 4px -5px 27px -10px rgba(0,0,0,0.75);
@@ -46,6 +46,7 @@ footer{
     background: black;
     text-align: center;
     p{
+      font-size: small;
       margin: 0;
       font-family:serif;
     }
@@ -58,13 +59,18 @@ footer{
     .inner_footer{
       .footer-contents{
         h3{
-          font-size: 1.3rem;
+          font-size: 1rem;
         }
         li{
           font-size: 12px;
         }
       }
     }
+  }
+
+  .footer-logo{
+    width: 150px;
+    margin-bottom: 10px;
   }
 
   .footer-inside{

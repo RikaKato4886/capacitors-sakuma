@@ -24,6 +24,7 @@ footer {
     footer .inner_footer .footer-inside p {
       font-family: serif; }
     footer .inner_footer .footer-contents {
+      padding-top: 10px;
       color: lightgray; }
       footer .inner_footer .footer-contents h3 {
         font-size: 1.8rem;
@@ -276,12 +277,12 @@ footer {
   flex-wrap: wrap;
   width: 100%; }
   .carousel-item-works .cards {
-    width: 50%; }
+    width: 100%; }
 
 .card {
   margin-bottom: 10rem;
   border-radius: 5px;
-  height: 460px; }
+  height: auto; }
   .card .card-body {
     border-top: solid .1px lightgray; }
     .card .card-body .card-title {
@@ -312,6 +313,9 @@ footer {
       text-decoration: none;
       background-color: #066969; }
 
+@media screen and (min-width: 768px) {
+  .carousel-item-works .cards {
+    width: 50%; } }
 .contact-body {
   background-image: url(../src/moyou1.jpg);
   background-repeat: no-repeat;
@@ -494,5 +498,8 @@ nav {
       font-size: 5rem; }
     .carousel-caption .top-button {
       font-size: x-large; } }
+@media (min-width: 992px) {
+  .nav-link {
+    margin-left: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */

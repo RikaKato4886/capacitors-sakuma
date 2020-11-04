@@ -37,14 +37,14 @@
   flex-wrap: wrap;
   width: 100%;
   .cards{
-    width: 50%;
+    width: 100%;
   }
 }
 
 .card{
   margin-bottom: 10rem;
   border-radius: 5px;
-  height: 460px;
+  height: auto;
   .card-body{
     border-top: solid .1px lightgray;
     .card-title{
@@ -82,5 +82,15 @@
       background-color: #066969;
     }
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .carousel-item-works{
+    .cards{
+      width: 50%;
+    }
+  }
+
 }
 

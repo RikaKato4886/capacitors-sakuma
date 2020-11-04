@@ -162,9 +162,12 @@ footer {
 
 .image-relation {
   background: #fffffe;
-  max-width: 95%;
+  max-width: 90%;
   margin: 3rem auto;
   border-radius: 40px; }
+
+.img-relation {
+  max-width: 750px; }
 
 .career-container {
   padding: 3rem auto;
@@ -246,7 +249,10 @@ footer {
     padding: 2rem 1rem; }
     .services-container .service {
       width: 100%;
-      margin: 1rem auto; } }
+      margin: 1rem auto; }
+
+  .image-relation {
+    max-width: 70%; } }
 .carousel {
   overflow: scroll; }
 

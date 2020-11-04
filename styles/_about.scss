@@ -125,10 +125,15 @@
 
 .image-relation{
   background: #fffffe;
-  max-width: 95%;
+  max-width: 90%;
   margin: 3rem auto;
   border-radius: 40px;
 }
+
+.img-relation {
+  max-width: 750px;
+}
+
 
 //------------- CAREER DETAILS ----------------//
 .career-container {
@@ -236,5 +241,9 @@
       width: 100%;
       margin: 1rem auto;
     }
+  }
+
+  .image-relation{
+    max-width: 70%;
   }
 }

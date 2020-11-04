@@ -16,7 +16,6 @@
   justify-self: center;
   box-shadow: 2px 0 grey;
   h1 {
-    // height: 100%;
     color: white;
     padding: 1rem 0;
   }
@@ -33,9 +32,19 @@
   }
 }
 
+.carousel-item-works{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .cards{
+    width: 50%;
+  }
+}
+
 .card{
   margin-bottom: 10rem;
   border-radius: 5px;
+  height: 460px;
   .card-body{
     border-top: solid .1px lightgray;
     .card-title{

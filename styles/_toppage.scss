@@ -39,13 +39,12 @@ nav{
 //--------------Carousel --------------------//
 .carousel-img{
   position: relative;
-
 }
 
-.carousel-item{
-  img{
-    height: 90vh;
-  }
+
+.d-block{
+  height: 90vh;
+  object-fit: cover;
 }
 
 .carousel-caption{
@@ -62,7 +61,6 @@ nav{
 }
 
 @media screen and (min-width: 280px) {
-
 
 
   .carousel-caption{

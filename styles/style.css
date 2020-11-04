@@ -271,9 +271,17 @@ footer {
   .sub-title p {
     color: #868686; }
 
+.carousel-item-works {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%; }
+  .carousel-item-works .cards {
+    width: 50%; }
+
 .card {
   margin-bottom: 10rem;
-  border-radius: 5px; }
+  border-radius: 5px;
+  height: 460px; }
   .card .card-body {
     border-top: solid .1px lightgray; }
     .card .card-body .card-title {
@@ -434,8 +442,9 @@ nav {
 .carousel-img {
   position: relative; }
 
-.carousel-item img {
-  height: 90vh; }
+.d-block {
+  height: 90vh;
+  object-fit: cover; }
 
 .carousel-caption {
   position: absolute;

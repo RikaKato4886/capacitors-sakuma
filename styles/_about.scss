@@ -24,7 +24,8 @@
   background-size: cover;
   background-image: url(../src/sakuma-photo.jpg);
   margin-bottom: 3rem;
-  // background-color: #f8f5f2;
+  padding-bottom: 2rem;
+
   .profile-inside-box{
     padding: 2rem 1rem;
     width: 90%;
@@ -215,7 +216,6 @@
     margin-bottom: 0;
   }
   .book-link{
-    background-color:white;
     width: 15rem;
     height: auto;
     margin: 1rem auto;
@@ -231,7 +231,29 @@
 
 //----------------MEDIA QUERY--------------------//
 
+@media screen and (min-width: 280px) {
+  .each-community{
+    .link-container{
+      width: 90%;
+    }
+  }
+
+}
+
+@media screen and (min-width: 576px) {
+  .each-community{
+    .link-container{
+      width: 60%;
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .each-community{
+    .link-container{
+      width: 40%;
+    }
+  }
   .services-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

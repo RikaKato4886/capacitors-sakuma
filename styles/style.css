@@ -86,7 +86,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(../src/sakuma-photo.jpg);
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  padding-bottom: 2rem; }
   .profile-container .profile-inside-box {
     padding: 2rem 1rem;
     width: 90%;
@@ -230,7 +231,6 @@ footer {
   .book-detail p {
     margin-bottom: 0; }
   .book-detail .book-link {
-    background-color: white;
     width: 15rem;
     height: auto;
     margin: 1rem auto; }
@@ -241,7 +241,16 @@ footer {
   width: 50%;
   margin: 0 auto; }
 
+@media screen and (min-width: 280px) {
+  .each-community .link-container {
+    width: 90%; } }
+@media screen and (min-width: 576px) {
+  .each-community .link-container {
+    width: 60%; } }
 @media screen and (min-width: 768px) {
+  .each-community .link-container {
+    width: 40%; }
+
   .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -296,14 +305,14 @@ footer {
     .card .card-body .date-panel {
       width: 7rem;
       height: auto;
-      background-color: #F45D48;
       border: none;
-      color: white;
+      color: #868686;
       border-radius: 3px;
-      padding: .3rem 1rem;
-      font-size: 13px;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 10px;
       margin-left: 5px;
-      text-align: center; }
+      text-align: left; }
     .card .card-body .card-text {
       color: #868686; }
     .card .card-body .btn {
@@ -384,7 +393,7 @@ footer {
     margin-top: 10px; }
     .contactform-container .input-box input, .contactform-container .input-box textarea {
       width: 100%;
-      padding: 5px 0; }
+      padding: 5px 0 5px 7px; }
     .contactform-container .input-box textarea {
       height: 6rem; }
 

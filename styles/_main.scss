@@ -54,14 +54,15 @@
     .date-panel{
       width: 7rem;
       height: auto;
-      background-color: #F45D48;
       border: none;
-      color: white;
+      color: $lightGrey;
       border-radius: 3px;
-      padding: .3rem 1rem;
-      font-size: 13px;
+      // padding: .3rem .3rem;
+      font-weight: 700;
+      font-size: 15px;
+      margin-bottom: 10px;
       margin-left: 5px;
-      text-align: center;
+      text-align: left;
     }
     .card-text{
       color: $lightGrey;
